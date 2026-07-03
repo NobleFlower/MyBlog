@@ -1,0 +1,18 @@
+---
+const platform = ["github", "csdn"];
+const username = ["NobleFlower", "m0_72966213?type=blog"];
+import Social from "./Social.astro";
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <Social platform={platform[0]} username={username[0]} />  
+  <!-- <Social platform={platform[1]} username={username[1]} />  -->
+</footer>
