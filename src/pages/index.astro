@@ -1,7 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting.jsx';
 const pageTitle = "首页";
+const greetingMessages = [
+  "欢迎来到我的博客",
+  "很高兴见到你",
+  "欢迎光临"
+];
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h2>我超棒的博客副标题</h2>
+  <Greeting client:load messages={greetingMessages} />
 </BaseLayout>
